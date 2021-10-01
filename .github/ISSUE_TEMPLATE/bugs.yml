@@ -1,0 +1,46 @@
+name: Bug Report
+description: Report a bug
+title: "[BUG] "
+labels: ["bug"]
+body:
+- type: textarea
+  id: desc
+  attributes:
+    label: Describe the bug
+    description: Explain what the bug is, so we know what to look for
+    placeholder: |
+      Example:
+      Registering tuppers adds brackets to name
+  validations:
+    required: true
+- type: textarea
+  id: expected
+  attributes:
+    label: What should be happening?
+    description: Explain what should happen instead of the bug
+    placeholder: |
+      Example:
+      Tuppers should be correctly registered with brackets
+  validations:
+    required: true
+- type: textarea
+  id: repro
+  attributes:
+    label: Steps to reproduce
+    description: How do you make the bug happen?
+    placeholder: |
+      Example:
+      1. Register a new tupper, like `tul!register "Tupper Name" brackets:text
+      2. Use `tul!show` to see the tupper
+      3. See that the brackets are part of the name
+  validations:
+    required: true
+- type: textarea
+  id: extra
+  attributes:
+    label: Anything else?
+    description: |
+      Links? Screenshots? Anything else that'll help fogure out what's going on
+       Tip: You can attach images or log files by clicking this area to highlight it and then dragging files in.
+  validations:
+    required: false
