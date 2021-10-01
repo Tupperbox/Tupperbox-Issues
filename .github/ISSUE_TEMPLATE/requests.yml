@@ -1,0 +1,34 @@
+name: Feature Request
+description: Request a feature
+title: "[REQ] "
+labels: ["enhancement"]
+body:
+- type: textarea
+  id: desc
+  attributes:
+    label: Feature description
+    description: Describe what you want to happen
+    placeholder: |
+      Example:
+      Tuppers should have stats
+  validations:
+    required: true
+- type: textarea
+  id: current
+  attributes:
+    label: What currently happens?
+    description: If this is part of an existing feature, what currently happens?
+    placeholder: |
+      Example:
+      Tuppers don't have stats
+  validations:
+    required: false
+- type: textarea
+  id: extra
+  attributes:
+    label: Anything else?
+    description: |
+      Links, screenshots, mockups, etc
+       Tip: You can attach images or log files by clicking this area to highlight it and then dragging files in.
+  validations:
+    required: false
